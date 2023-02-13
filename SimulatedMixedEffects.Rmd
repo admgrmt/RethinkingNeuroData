@@ -5,6 +5,8 @@ date: "8/19/2021"
 output:
   html_document: default
   pdf_document: default
+editor_options: 
+  chunk_output_type: console
 ---
 
 ## setting up enviornment 
@@ -190,8 +192,8 @@ ggplot(replicateStudy, aes(x=NumReps, y = meanVec)) + geom_point() +
 ## loading unbalanced dat from python creation
 ```{r}
 ## to remove: subj 1 half of trials, subj
-dat_mess <- read.csv('C:/Users/daniel.feeney/OneDrive - Boa Technology Inc/Desktop/Rethinking Neuro Data Manuscript/Code/Data/messDat.csv')
-dat_unbal <- read.csv('C:/Users/daniel.feeney/OneDrive - Boa Technology Inc/Desktop/Rethinking Neuro Data Manuscript/Code/Data/unbalDat.csv')
+dat_mess <- read.csv('messDat.csv')
+dat_unbal <- read.csv('unbalDat.csv')
 
 
 ```
